@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" [ngClass]="'fixed-header'">
+  <div class="image-container">
+    <img class="header-logo" src="assets/images/r-logo.png" alt="" />
+  </div>
+  <header>Röntynen</header>
+  <button mat-flat-button color="accent" (click)="login($event)" target="_blank">Kirjaudu</button>
+</mat-toolbar>
+
+<mat-toolbar
+  color="accent"
+  [ngClass]="{ 'mat-elevation-z5': true, sticky: isSticky }"
+>
+</mat-toolbar>

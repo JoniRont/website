@@ -1,0 +1,128 @@
+.introduction-container{
+  display: flex;
+  margin: 100px 30px;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 1000px;
+}
+.introduction-text{
+  max-width: 30%;
+}
+
+.image-container{
+  width: 10%;
+  height: 10%;
+}
+
+  img {
+    border-radius: 20%;
+    height: 200px;
+    width: 200px;
+  }
+
+
+  .fixed-header {
+    position: relative;
+    z-index: 999;
+    height: 6vw;
+    background-color: #262524;
+    width: 100%;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-direction: row;
+  }
+
+  .image-container{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: #e27725;
+    display: flex;
+    align-self: center;
+    padding: auto;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 40px;
+
+  }
+
+  .header-logo {
+    display: flex;
+    align-self: center;
+    width: 5vw;
+    height: 5vw;
+    object-fit: scale-down;
+  }
+
+  .mat-elevation-z5 {
+    position: relative;
+    opacity: 0.95;
+    top: 0px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0px;
+    opacity: 0.95;
+  }
+
+  header{
+    font-size: 4em;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#e27725;
+  }
+//
+
+// .fixed-header {
+//   position: relative;
+//   z-index: 999;
+//   height: 6vw;
+//   background-color: #262524;
+//   width: 100%;
+//   // display: flex;
+//   // justify-content: space-between;
+//   // flex-direction: row;
+// }
+
+// .image-container{
+//   width: 8vw;
+//   height: 8vw;
+//   border-radius: 50%;
+//   background-color: #e27725;
+//   display: flex;
+//   align-self: center;
+//   padding: auto;
+//   justify-content: center;
+//   margin-left: 10px;
+//   margin-top: 40px;
+
+// }
+
+// .header-logo {
+//   display: flex;
+//   align-self: center;
+//   width: 5vw;
+//   height: 5vw;
+//   object-fit: scale-down;
+// }
+
+// .mat-elevation-z5 {
+//   position: relative;
+//   opacity: 0.95;
+//   top: 0px;
+// }
+
+// .sticky {
+//   position: fixed;
+//   top: 0px;
+//   opacity: 0.95;
+// }
+
+// header{
+//   font-size: 4em;
+//   font-weight: 700;
+//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+//   color:#e27725;
+// }
