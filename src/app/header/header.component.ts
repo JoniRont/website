@@ -9,18 +9,18 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   @HostListener('window:scroll', ['$event'])
-  isSticky: boolean = false;
-
-  constructor(private router: Router) {}
-
   checkScroll() {
     this.isSticky = window.scrollY >= 50;
   }
 
+  isSticky: boolean = false;
+
+  constructor(private router: Router) {}
+
+
   login(event: any): void {
     this.router.navigate(['/']).then((result) => {
       window.open('https://rontynen.org/api');
-
     });
   }
 }
