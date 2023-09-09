@@ -8,10 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  @Output() scrollToContentEmitter = new EventEmitter<string>();
+  selectedId?: string;
+
   @HostListener('window:scroll', ['$event'])
-  // @Output() introductionScrollEvent = new EventEmitter<HTMLElement>();
   checkScroll() {
-    this.isSticky = window.scrollY >= 80;
+    this.isSticky = window.scrollY >= 100;
   }
 
   isSticky: boolean = false;
@@ -25,8 +27,11 @@ export class HeaderComponent {
     });
   }
 
-  scroll() {
-    // el.scrollIntoView(({behavior: 'smooth'}));
-    // this.introductionScrollEvent.emit()
-}
+  scrollToContent(id: string) {
+    this.selectedId = id;
+    this.scrollToContentEmitter.emit(id)
+    console.log(this.scrollToContentEmitter)
+
+  }
+
 }

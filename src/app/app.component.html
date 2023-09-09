@@ -3,9 +3,9 @@
 <!-- <div class="custom-popup" id="frugalmap" >Map</div> -->
 <div class="body">
 
-  <app-header (myClick)="scrollToIntroduction()"> </app-header>
-  <app-introduction #introduction></app-introduction>
-  <app-samples></app-samples>
+  <app-header (scrollToContentEmitter)="scrollToIntroduction($event)"> </app-header>
+  <app-introduction id="introduction"></app-introduction>
+  <app-samples id="samples"></app-samples>
   <app-footer></app-footer>
 
 </div>

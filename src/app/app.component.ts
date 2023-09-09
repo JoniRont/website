@@ -1,14 +1,18 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'website';
-  scrollToIntroduction(){
-    // let el = document.getElementById('introduction');
-    // el?.scrollIntoView({behavior: 'smooth'});
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
   }
+  title = 'website';
+  scrollToIntroduction(id: string){
+    let el = document.getElementById(id);
+    el?.scrollIntoView({behavior: 'smooth'});
+  }
+
 }
