@@ -3,11 +3,12 @@
     <img class="header-logo" src="assets/images/r-logo.png" alt="" />
   </div>
   <header>Röntynen</header>
-  <button mat-flat-button color="accent" (click)="login($event)" target="_blank">Kirjaudu</button>
 </mat-toolbar>
 
 <mat-toolbar
-  color="accent"
-  [ngClass]="{ 'mat-elevation-z5': true, sticky: isSticky }"
+class="header-toolbar"
+[ngClass]="{ sticky: isSticky }"
 >
+<!-- <button (click)="scroll()">Scroll To Div</button> -->
+<button mat-flat-button class="login-button" (click)="login($event)" target="_blank">Kirjaudu</button>
 </mat-toolbar>

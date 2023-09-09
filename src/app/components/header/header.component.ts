@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   @HostListener('window:scroll', ['$event'])
+  // @Output() introductionScrollEvent = new EventEmitter<HTMLElement>();
   checkScroll() {
-    this.isSticky = window.scrollY >= 50;
+    this.isSticky = window.scrollY >= 80;
   }
 
   isSticky: boolean = false;
@@ -23,4 +24,9 @@ export class HeaderComponent {
       window.open('https://rontynen.org/api');
     });
   }
+
+  scroll() {
+    // el.scrollIntoView(({behavior: 'smooth'}));
+    // this.introductionScrollEvent.emit()
+}
 }

@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
-// import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatChipsModule, MatOptionModule, MatGridListModule, MatProgressBarModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatDialogModule, MatSnackBarModule, MatSelectModule, MatInputModule, MatSidenavModule, MatCardModule, MatIconModule, MatRadioModule, MatProgressSpinnerModule, MatTabsModule, MatListModule } from '@angular/material';
-import {MatToolbarModule} from '@angular/material/toolbar'
-import { AppModule } from '../app.module';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
   imports: [
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule,
+    MatDividerModule
   ],
   declarations:[],
   exports: [
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule,
+    MatDividerModule
   ],
 })
 export class MaterialModule { }

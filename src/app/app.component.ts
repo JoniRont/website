@@ -7,5 +7,8 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'website';
-
+  scrollToIntroduction(){
+    // let el = document.getElementById('introduction');
+    // el?.scrollIntoView({behavior: 'smooth'});
+  }
 }
