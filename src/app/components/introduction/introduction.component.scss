@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.introduction-container{
+.introduction-container {
   display: flex;
   justify-self: center;
   align-self: center;
@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 
-.introduction-text{
+.introduction-text {
   width: 50%;
   & p {
     color: white;
@@ -54,6 +54,14 @@
 
 
 
+@media only screen and (max-width: 768px) {
+  .introduction-container {
+    flex-direction: column;
 
+  }
+  .introduction-text {
+    width: 100%;
+  }
+}
 
 

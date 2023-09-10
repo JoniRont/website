@@ -1,40 +1,37 @@
 <div class="header">
-
   <mat-toolbar color="primary" [ngClass]="'fixed-header'">
     <div class="image-container">
       <img class="header-logo" src="assets/images/r-logo.png" alt="" />
     </div>
     <header>Röntynen</header>
-</mat-toolbar>
+  </mat-toolbar>
 
-<mat-toolbar class="header-toolbar" [ngClass]="{ sticky: isSticky }">
-  <div class="header-navigation-buttons">
+  <mat-toolbar class="header-toolbar" [ngClass]="{ sticky: isSticky }">
+    <div class="header-navigation-buttons">
+      <button
+        mat-button
+        class="navigation-button"
+        (click)="scrollToContent('introduction')"
+        [ngClass]="{ selected: selectedId === 'introduction' }"
+      >
+        Esittely
+      </button>
+      <button
+        mat-button
+        class="navigation-button"
+        (click)="scrollToContent('samples')"
+        [ngClass]="{ selected: selectedId === 'samples' }"
+      >
+        Osaaminen
+      </button>
+    </div>
     <button
-    mat-button
-    class="navigation-button"
-    (click)="scrollToContent('introduction')"
-    [ngClass]="{ selected: selectedId === 'introduction' }"
+      mat-flat-button
+      class="login-button"
+      (click)="login($event)"
+      target="_blank"
     >
-    Esittely
-  </button>
-  <button
-  mat-button
-  class="navigation-button"
-  (click)="scrollToContent('samples')"
-  [ngClass]="{ selected: selectedId === 'samples' }"
-
-  >
-  Osaaminen
-</button>
-</div>
-<button
-mat-flat-button
-class="login-button"
-(click)="login($event)"
-target="_blank"
->
-Kirjaudu
-</button>
-</mat-toolbar>
-
+      Kirjaudu
+    </button>
+  </mat-toolbar>
 </div>
