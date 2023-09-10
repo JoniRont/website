@@ -12,7 +12,6 @@
     display: grid;
     grid-template: "icon title .";
     grid-auto-columns: minmax(0, 1fr);
-
   }
 
   .image-container {
@@ -80,7 +79,56 @@
       }
 
 @media only screen and (max-width: 768px) {
+
+  .fixed-header {
+    position: relative;
+    z-index: 999;
+    height: 100px;
+    background-color: #fdb933;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    font-size: 2em;
+  }
+  .header-toolbar {
+    flex-direction: column-reverse;
+    height: 80px;
+    gap: 0px;
+    opacity: 1;
+  }
+
   .image-container{
     display: none;
   }
+  .header-navigation-buttons{
+    margin-left: 0%;
+    gap: 30px;
+    display: flex;
+
+    & button {
+      width: 20px;
+      & p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141414  !important;
+    margin-bottom: 100px;
+  }
+
+  .login-button {
+    margin-top: 10px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    height: 20px;
+    width: 50px;
+  }
+
 }

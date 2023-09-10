@@ -46,6 +46,7 @@
   .introduction-arrow {
     justify-self: flex-start;
   }
+
 .divider {
   border-top-color: #fdba3371;
   border-top-width: 2px;
@@ -57,11 +58,19 @@
 @media only screen and (max-width: 768px) {
   .introduction-container {
     flex-direction: column;
-
+    margin: 100px 50px 50px;
   }
   .introduction-text {
     width: 100%;
   }
+  .image-container {
+    max-width: 80%;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 }
 
 
