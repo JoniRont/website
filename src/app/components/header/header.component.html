@@ -1,38 +1,30 @@
-<div class="header">
-  <!-- <mat-toolbar color="primary" [ngClass]="'fixed-header'">
-    <div class="image-container">
-      <img class="header-logo" src="assets/images/r-logo.png" alt="" />
-    </div>
-    <header>Röntynen</header>
-  </mat-toolbar> -->
-
-  <mat-toolbar class="header-toolbar" [ngClass]="{ sticky: true }">
-    <img class="header-logo" src="assets/images/header-logo.png" alt="" />
-    <div class="header-navigation-buttons">
-      <button
-        mat-button
-        class="navigation-button"
-        (click)="scrollToContent('introduction')"
-        [ngClass]="{ selected: selectedId === 'introduction' }"
-      >
-        <p>Esittely</p>
-      </button>
-      <button
-        mat-button
-        class="navigation-button"
-        (click)="scrollToContent('samples')"
-        [ngClass]="{ selected: selectedId === 'samples' }"
-      >
-        <p>Osaaminen</p>
-      </button>
-    </div>
+<mat-toolbar class="header-toolbar">
+  <img class="header-logo" src="assets/images/header-logo.png" alt="" />
+  <div class="header-navigation-buttons">
     <button
-      mat-flat-button
-      class="login-button"
-      (click)="login($event)"
-      target="_blank"
+      mat-button
+      class="navigation-button"
+      (click)="scrollToContent('introduction')"
+      [ngClass]="{ selected: selectedId === 'introduction' }"
     >
-      Kirjaudu
+      <p>Esittely</p>
     </button>
-  </mat-toolbar>
-</div>
+    <button
+      mat-button
+      class="navigation-button"
+      (click)="scrollToContent('samples')"
+      [ngClass]="{ selected: selectedId === 'samples' }"
+    >
+      <p>Osaaminen</p>
+    </button>
+  </div>
+  <button
+    mat-flat-button
+    class="login-button"
+    (click)="login($event)"
+    target="_blank"
+  >
+    Kirjaudu
+  </button>
+</mat-toolbar>
+<!-- </div> -->

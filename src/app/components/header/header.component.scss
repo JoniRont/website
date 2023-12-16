@@ -1,142 +1,48 @@
-
-
-.header {
-  height: 150px;
+.header-toolbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: #ffffffdb  !important;
+  margin-bottom: 100px;
+  width: 100%;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 20;
 }
-  // .fixed-header {
-  //   position: relative;
-  //   z-index: 999;
-  //   height: 100px;
-  //   background-color: #fdb933;
-  //   width: 100%;
-  //   display: grid;
-  //   grid-template: "icon title .";
-  //   grid-auto-columns: minmax(0, 1fr);
-  // }
 
-  // .image-container {
-  //   grid-area: icon;
-  //   width: 100px;
-  //   height: 100px;
-  //   border-radius: 50%;
-  //   background-color: #3e3b37e5;
-  //   display: flex;
-  //   align-self: self-start;
-  //   padding: auto;
-  //   justify-content: center;
-  //   margin-left: 10px;
-  //   padding-top: 30px;
-
-  // }
-
-  // .header-logo {
-  //   padding: 20px;
-  // }
-.header-logo {
-  padding-top: 10px;
-  z-index: 5;
-}
-  .sticky {
-    position: fixed;
-    top: 0px;
-    opacity: 0.95;
+  .header-logo {
+    padding-top: 10px;
   }
 
-  header{
-    grid-area: title;
-    font-size: 3em;
-    font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#141414 ;
-    align-self: self-start;
-    justify-self: center;
-    margin-top: 30px;
-  }
 
-  .login-button{
-    background-color: #fdb933 !important;
-    width: 100px;
-    padding: 8px 16px;
-
-  }
-  .header-toolbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffffdb  !important;
-    margin-bottom: 100px;
-    width: 80%;
-    justify-content: space-between;
-  }
-    .header-navigation-buttons{
-      margin-left: 10%;
-      display: flex;
-      gap: 30px;
+    header{
+      grid-area: title;
+      font-size: 3em;
+      font-weight: 700;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color:#141414 ;
+      align-self: self-start;
+      justify-self: center;
+      margin-top: 30px;
     }
-      .navigation-button {
-        color: rgb(0, 0, 0) !important;
-        font-size: 20px;
-      }
 
-      .selected{
-        color: #fdb933 !important;
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: underline;
-      }
-
-@media only screen and (max-width: 768px) {
-
-// .fixed-header {
-//   position: relative;
-//   z-index: 999;
-//   height: 100px;
-//   background-color: #fdb933;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-// }
-
-// header {
-//   font-size: 2em;
-// }
-  .header-toolbar {
-    flex-direction: column-reverse;
-    height: 80px;
-    gap: 0px;
-    opacity: 1;
-  }
-
-  .image-container{
-    display: none;
-  }
-  .header-navigation-buttons{
-    margin-left: 0%;
-    gap: 30px;
-    display: flex;
-
-    & button {
-      width: 20px;
-      & p {
-        font-size: 15px;
-      }
+    .login-button{
+      background-color: #fdb933 !important;
+      width: 100px;
+      padding: 8px 16px;
     }
-  }
+      .header-navigation-buttons{
+        margin-left: 10%;
+        display: flex;
+        gap: 30px;
+      }
+        .navigation-button {
+          color: rgb(0, 0, 0) !important;
+          font-size: 20px;
+        }
+        .selected{
+          color: #fdb933 !important;
+          font-size: 20px;
+          font-weight: bold;
+          text-decoration: underline;
+        }
 
-  .header-toolbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #141414  !important;
-    margin-bottom: 100px;
-  }
-
-  .login-button {
-    margin-top: 10px;
-    justify-self: flex-end;
-    align-self: flex-end;
-    height: 20px;
-    width: 50px;
-  }
-
-}
