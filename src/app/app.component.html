@@ -1,10 +1,13 @@
 <!-- <mat-toolbar color="primary" class="fixed-header" ></mat-toolbar> -->
 <!-- <div class="custom-popup" id="frugalmap" >Map</div> -->
-<div class="body">
-  <app-header (scrollToContentEmitter)="scrollToIntroduction($event)">
-  </app-header>
-  <app-main-content></app-main-content>
-  <app-introduction id="introduction"></app-introduction>
-  <app-samples id="samples"></app-samples>
-  <app-footer></app-footer>
+<div class="main">
+  <div class="background-text">Röntynen</div>
+  <div class="main-components">
+    <app-header (scrollToContentEmitter)="scrollToIntroduction($event)">
+    </app-header>
+    <app-main-content></app-main-content>
+    <app-introduction id="introduction"></app-introduction>
+    <app-samples id="samples"></app-samples>
+    <app-footer></app-footer>
+  </div>
 </div>

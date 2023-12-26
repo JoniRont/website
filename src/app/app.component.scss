@@ -1,5 +1,37 @@
-.body{
-  background-color: "#FFFFFF";
+@import '../mixins.scss';
+.main {
   width: 100%;
-  min-height: 100%;
+  display: flex;
+  justify-content: center;
+
 }
+.background-text {
+  position: fixed;
+  z-index: -1;
+  color: rgba(253, 186, 51, 0.078);
+  font-size: 25em;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+.main-components {
+  background-color: "#FFFFFF";
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+@include desktop {
+  .background-text {
+    position: fixed;
+  }
+  .main-components{
+    width: 60%;
+  }
+}
+

@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '/src/mixins.scss';
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body {
+  display: flex;
+  justify-items: center;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  width: 90%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@include desktop {
+  body{
+    width: 80%;
+  }
+}
+
