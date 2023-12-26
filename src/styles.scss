@@ -10,13 +10,13 @@ body {
   display: flex;
   justify-items: center;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
   width: 90%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 @include desktop {
   body{
-    width: 80%;
+    width: 60%;
   }
 }
 

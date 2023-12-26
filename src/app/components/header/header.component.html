@@ -1,4 +1,4 @@
-<mat-toolbar class="header-toolbar">
+<div class="header-toolbar">
   <div class="header-logo">
     <img class="header-logo-image" src="assets/images/header-logo.png" alt="" />
     <button mat-icon-button class="login-icon-button" (click)="login($event)">
@@ -6,7 +6,7 @@
     </button>
   </div>
   <div class="header-navigation-buttons">
-    <button
+    <!-- <button
       mat-button
       class="navigation-button"
       (click)="scrollToContent('introduction')"
@@ -21,7 +21,7 @@
       [ngClass]="{ selected: selectedId === 'samples' }"
     >
       <p>Osaaminen</p>
-    </button>
+    </button> -->
     <button
       mat-flat-button
       class="login-button"
@@ -31,6 +31,4 @@
       Kirjaudu
     </button>
   </div>
-  <!-- <mat-icon class="login-icon" (click)="login($event)">login</mat-icon> -->
-</mat-toolbar>
-<!-- </div> -->
+</div>

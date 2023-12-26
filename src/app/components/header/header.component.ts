@@ -1,5 +1,4 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, EventEmitter, HostListener, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,12 +10,7 @@ export class HeaderComponent {
   @Output() scrollToContentEmitter = new EventEmitter<string>();
   selectedId?: string;
 
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    this.isSticky = window.scrollY >= 100;
-  }
 
-  isSticky: boolean = false;
 
   constructor(private router: Router) {}
 

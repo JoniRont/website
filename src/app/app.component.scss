@@ -23,15 +23,10 @@
   min-height: 100%;
   display: flex;
   justify-content: center;
-  width: 90%;
+  flex-direction: column;
 }
 
 @include desktop {
-  .background-text {
-    position: fixed;
-  }
-  .main-components{
-    width: 60%;
-  }
+
 }
 
