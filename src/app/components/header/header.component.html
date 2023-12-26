@@ -1,5 +1,10 @@
 <mat-toolbar class="header-toolbar">
-  <img class="header-logo" src="assets/images/header-logo.png" alt="" />
+  <div class="header-logo">
+    <img class="header-logo-image" src="assets/images/header-logo.png" alt="" />
+    <button mat-icon-button class="login-icon-button" (click)="login($event)">
+      <mat-icon>login</mat-icon>
+    </button>
+  </div>
   <div class="header-navigation-buttons">
     <button
       mat-button
@@ -17,14 +22,15 @@
     >
       <p>Osaaminen</p>
     </button>
+    <button
+      mat-flat-button
+      class="login-button"
+      (click)="login($event)"
+      target="_blank"
+    >
+      Kirjaudu
+    </button>
   </div>
-  <button
-    mat-flat-button
-    class="login-button"
-    (click)="login($event)"
-    target="_blank"
-  >
-    Kirjaudu
-  </button>
+  <!-- <mat-icon class="login-icon" (click)="login($event)">login</mat-icon> -->
 </mat-toolbar>
 <!-- </div> -->

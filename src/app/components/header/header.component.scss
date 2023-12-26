@@ -1,48 +1,92 @@
+@import '../../../mixins.scss';
+
 .header-toolbar {
   display: flex;
   justify-content: space-between;
   background-color: #ffffffdb  !important;
-  margin-bottom: 100px;
   width: 100%;
-  justify-content: space-around;
+  height: 10%;
   position: fixed;
   z-index: 20;
+  flex-direction: column;
 }
 
   .header-logo {
-    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+    .header-logo-image {
+      height: 30px;
+    }
+    .login-icon-button {
+      display: inline;
+    }
+
+  header{
+    grid-area: title;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#141414 ;
+    align-self: self-start;
+    justify-self: center;
+    margin-top: 30px;
   }
 
+  .login-button{
+    background-color: #fdb933 !important;
+    width: 100px;
+    padding: 4px 8px;
+    display: none;
+  }
 
-    header{
-      grid-area: title;
-      font-size: 3em;
-      font-weight: 700;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      color:#141414 ;
-      align-self: self-start;
-      justify-self: center;
-      margin-top: 30px;
+    .header-navigation-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
     }
-
-    .login-button{
-      background-color: #fdb933 !important;
-      width: 100px;
-      padding: 8px 16px;
-    }
-      .header-navigation-buttons{
-        margin-left: 10%;
-        display: flex;
-        gap: 30px;
+      .navigation-button {
+        color: rgb(0, 0, 0) !important;
+        font-size: 15px;
       }
-        .navigation-button {
-          color: rgb(0, 0, 0) !important;
-          font-size: 20px;
-        }
-        .selected{
-          color: #fdb933 !important;
-          font-size: 20px;
-          font-weight: bold;
-          text-decoration: underline;
-        }
+      .selected{
+        color: #fdb933 !important;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
 
+@include desktop  {
+  .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffffdb  !important;
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 20;
+    flex-direction: row;
+  }
+  .login-button{
+    width: 100px;
+    padding: 8px 16px;
+    display: flex;
+  }
+  .login-icon-button {
+    display: none;
+  }
+  .header-logo {
+    width: auto;
+  }
+  .header-logo-image {
+    padding-top: 10px;
+    height: 60px;
+  }
+  .navigation-button {
+    font-size: 20px;
+  }
+
+}
