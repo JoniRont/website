@@ -1,48 +1,41 @@
+@import '../../../mixins.scss';
 .introduction{
-  width: 60%;
-  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .introduction-container {
   display: flex;
-  justify-self: center;
-  align-self: center;
-  margin: 100px 300px 100px;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
-
 .introduction-text {
-  width: 50%;
+  width: 100%;
   & p {
     color: rgb(0, 0, 0);
     letter-spacing: 3px;
-    font-size: larger;
+    font-size: small
   }
   & h2 {
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: medium;
   }
 }
-
-
 
 .divider {
-  border-top-color: #fdba3371;
-  border-top-width: 2px;
-  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-
-
-@media only screen and (max-width: 768px) {
-  .introduction-container {
-    flex-direction: column;
-    margin: 100px 50px 50px;
-  }
+@include desktop {
   .introduction-text {
-    width: 100%;
+    width: 60%;
+  }
+  .introduction-container {
+    padding: 100px 0px
   }
 
 

@@ -4,11 +4,9 @@
 .contents {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-content: space-between;
   padding: 100px 20px 20px 20px;
   gap: 20px;
-  height: 300px;
 }
 
 .content {
@@ -59,6 +57,8 @@ img {
   .contents {
     display: flex;
     flex-direction: row;
+    height: 300px;
+    justify-content: space-between;
   }
   .introduction-image {
     padding: 30px;

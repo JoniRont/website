@@ -1,7 +1,10 @@
+@import '../../../mixins.scss';
+
 .samples {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -10,7 +13,7 @@
     flex-direction: row;
     justify-self: center;
     align-self: center;
-    margin: 100px 200px 100px;
+    // margin: 100px 200px 100px;
     justify-content: space-between;
     width: 100%;
     background-color:#fdb933 ;
@@ -19,7 +22,6 @@
   }
 
     .samples-text{
-      max-width: 50%;
       & p {
         color: rgb(0, 0, 0);
         letter-spacing: 2px;
@@ -31,12 +33,19 @@
     }
 
     .samples-image {
-      max-width: 300px;
       height: auto;
+      // padding: 20px;
+    }
+    .image-background{
+      width: 100%;
+      background-color: #fdba332d;
+      border-radius: 10px;
     }
 
-
-@media only screen and (max-width: 768px) {
+@include desktop {
+  .samples {
+    flex-direction: row;
+  }
   .samples-container{
     display: flex;
     flex-direction: column;
