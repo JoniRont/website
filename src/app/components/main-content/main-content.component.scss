@@ -21,7 +21,8 @@
 }
 
 img {
-  max-width: 100%;
+  max-width: 80%;
+  min-width: 150px;
   height: auto;
   align-self: flex-end;
 }
@@ -47,11 +48,22 @@ img {
 .intro {
   font-weight: 500;
 }
+.introduction-image {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 
 @include desktop {
   .contents {
     display: flex;
     flex-direction: row;
+  }
+  .introduction-image {
+    padding: 30px;
+    display: flex;
+    align-self: flex-start;
   }
 
 }
