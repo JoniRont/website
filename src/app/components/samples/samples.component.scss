@@ -1,62 +1,64 @@
-@import '../../../mixins.scss';
+@import "../../../mixins.scss";
+.divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .samples {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+.flutter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & section {
+    width: 80%;
+    padding-top: 20px;
+  }
+}
+.aws {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.samples-container-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.samples-text {
+  text-align: center;
+
+  & p {
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+  }
+  & h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
 }
 
-  .samples-container{
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    align-self: center;
-    // margin: 100px 200px 100px;
-    justify-content: space-between;
-    width: 100%;
-    background-color:#fdb933 ;
-    border-radius: 10px;
-    padding: 40px;
-  }
-
-    .samples-text{
-      & p {
-        color: rgb(0, 0, 0);
-        letter-spacing: 2px;
-      }
-      & h2 {
-        color: rgb(0, 0, 0);
-        font-size: 30px;
-      }
-    }
-
-    .samples-image {
-      height: auto;
-      // padding: 20px;
-    }
-    .image-background{
-      width: 100%;
-      background-color: #fdba332d;
-      border-radius: 10px;
-    }
+.samples-image {
+  height: auto;
+}
+.image-background {
+  width: 100%;
+  background-color: #fdba3323;
+  border-radius: 10px;
+}
 
 @include desktop {
-  .samples {
-    flex-direction: row;
-  }
-  .samples-container{
-    display: flex;
-    flex-direction: column;
-    margin: 100px 20px 20px;
-    justify-content: space-between;
-    min-height: 600px;
-  }
   .samples-text {
     width: 100%;
   }
   .samples-image {
-    width: 100%;
+    width: 50%;
   }
 }

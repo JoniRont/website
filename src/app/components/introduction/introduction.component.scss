@@ -33,6 +33,12 @@
 @include desktop {
   .introduction-text {
     width: 60%;
+    & p {
+      font-size: medium
+    }
+    & h2 {
+      font-size: large;
+    }
   }
   .introduction-container {
     padding: 100px 0px

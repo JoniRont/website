@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '/src/mixins.scss';
+@import "/src/mixins.scss";
 html {
   height: 100%;
   width: 100%;
@@ -12,16 +12,20 @@ body {
   margin: 0;
   padding: 20px 50px;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("assets/images/background-image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 @include desktop {
-  body{
+  body {
     width: 80%;
   }
 }
 
 @include desktop-large {
-  body{
+  body {
     width: 60%;
   }
 }
