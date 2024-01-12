@@ -20,12 +20,12 @@ body {
 
 @include desktop {
   body {
-    // width: 80%;
+    width: 90%;
   }
 }
 
 @include desktop-large {
   body {
-    // width: 60%;
+    width: 60%;
   }
 }
