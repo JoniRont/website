@@ -2,32 +2,30 @@
 @import "/src/mixins.scss";
 html {
   height: 100%;
-  width: 100%;
+  // width: 100%;
   display: flex;
   justify-content: center;
 }
 body {
-  // display: flex;
-  // justify-items: center;
   margin: 0;
-  padding: 20px 50px;
+  margin: 20px 50px;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-image: url("assets/images/background-image.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  // height: auto;
+  height: auto;
   // width: 100%;
 }
 
 @include desktop {
   body {
-    width: 80%;
+    // width: 80%;
   }
 }
 
 @include desktop-large {
   body {
-    width: 60%;
+    // width: 60%;
   }
 }
