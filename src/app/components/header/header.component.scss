@@ -1,4 +1,4 @@
-@import '../../../mixins.scss';
+@import "../../../mixins.scss";
 
 .header-toolbar {
   display: flex;
@@ -7,62 +7,63 @@
   align-items: center;
 }
 
-  .header-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-    .header-logo-image {
-      height: 30px;
-    }
-    .login-icon-button {
-      display: inline;
-    }
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-logo-image {
+  height: 30px;
+}
+.login-icon-button {
+  display: inline;
+}
 
-  header{
-    grid-area: title;
-    font-size: 3em;
-    font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#141414 ;
-    align-self: self-start;
-    justify-self: center;
-    margin-top: 30px;
-  }
+header {
+  grid-area: title;
+  font-size: 3em;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #141414;
+  align-self: self-start;
+  justify-self: center;
+  margin-top: 30px;
+}
 
-  .login-button{
-    background-color: #fdb933 !important;
-    width: 100px;
-    padding: 4px 8px;
-    display: none;
-  }
+.login-button {
+  background-color: #fdb933 !important;
+  width: 100px;
+  padding: 4px 8px;
+  display: none;
+}
 
-    .header-navigation-buttons {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
-      .navigation-button {
-        color: rgb(0, 0, 0) !important;
-        font-size: 15px;
-      }
-      .selected{
-        color: #fdb933 !important;
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: underline;
-      }
+.header-navigation-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navigation-button {
+  color: rgb(0, 0, 0) !important;
+  font-size: 15px;
+}
+.selected {
+  color: #fdb933 !important;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-@include desktop  {
+@include desktop {
   .header-toolbar {
     display: flex;
-    background-color: #ffffffdb  !important;
+    background-color: #ffffffdb !important;
     justify-content: space-between;
     flex-direction: row;
   }
-  .login-button{
+  .login-button {
     width: 100px;
     padding: 8px 16px;
     display: flex;
@@ -80,5 +81,4 @@
   .navigation-button {
     font-size: 20px;
   }
-
 }
