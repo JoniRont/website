@@ -1,5 +1,5 @@
-@import '../../../mixins.scss';
-.introduction{
+@import "../../../../../mixins.scss";
+.introduction {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@
   & p {
     color: rgb(0, 0, 0);
     letter-spacing: 3px;
-    font-size: small
+    font-size: small;
   }
   & h2 {
     color: rgb(0, 0, 0);
@@ -34,17 +34,13 @@
   .introduction-text {
     width: 60%;
     & p {
-      font-size: medium
+      font-size: medium;
     }
     & h2 {
       font-size: large;
     }
   }
   .introduction-container {
-    padding: 100px 0px
+    padding: 100px 0px;
   }
-
-
 }
-
-

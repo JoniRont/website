@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './components/header/header.component';
-import { IntroductionComponent } from './components/introduction/introduction.component';
-import { SamplesComponent } from './components/samples/samples.component';
+import { IntroductionComponent } from './components/pages/main-page/introduction/introduction.component';
+import { SamplesComponent } from './components/pages/main-page/samples/samples.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MainContentComponent } from './components/main-content/main-content.component';
-import { MatIconModule } from '@angular/material/icon'
+import { MainContentComponent } from './components/pages/main-page/main-content/main-content.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MainPageComponent } from './components/pages/main-page/main-page.component';
+import { ProjectXComponent } from './components/pages/project-page/project-x/project-x.component'
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { MatIconModule } from '@angular/material/icon'
     IntroductionComponent,
     SamplesComponent,
     FooterComponent,
-    MainContentComponent
+    MainContentComponent,
+    MainPageComponent,
+    ProjectXComponent
   ],
   imports: [
     BrowserModule,

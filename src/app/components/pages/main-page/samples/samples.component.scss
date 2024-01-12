@@ -1,4 +1,4 @@
-@import "../../../mixins.scss";
+@import "../../../../../mixins.scss";
 .divider {
   width: 100%;
   display: flex;
@@ -12,11 +12,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 40px;
+  align-items: center;
 }
 .flutter {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
   & section {
     width: 80%;
     padding-top: 20px;
@@ -26,6 +28,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.project-x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & img {
+    width: 300px;
+  }
 }
 .samples-container-intro {
   display: flex;
@@ -49,9 +59,11 @@
   height: auto;
 }
 .image-background {
-  width: 100%;
-  background-color: #fdba3323;
+  background-color: #ffba1a1a;
   border-radius: 10px;
+}
+.button {
+  cursor: pointer;
 }
 
 @include desktop {

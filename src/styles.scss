@@ -7,8 +7,8 @@ html {
   justify-content: center;
 }
 body {
-  display: flex;
-  justify-items: center;
+  // display: flex;
+  // justify-items: center;
   margin: 0;
   padding: 20px 50px;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -16,6 +16,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  // height: auto;
+  // width: 100%;
 }
 
 @include desktop {

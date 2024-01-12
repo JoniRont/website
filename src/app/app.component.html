@@ -5,10 +5,10 @@
     <div class="main-components">
       <app-header (scrollToContentEmitter)="scrollToIntroduction($event)">
       </app-header>
-      <app-main-content></app-main-content>
-      <app-introduction id="introduction"></app-introduction>
-      <app-samples id="samples"></app-samples>
-      <!-- <app-footer></app-footer> -->
+      <!-- <div style="width: 100%; height: 100%"> -->
+      <router-outlet></router-outlet>
+      <!-- </div> -->
+      <app-footer></app-footer>
     </div>
   </div>
 </div>

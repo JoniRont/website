@@ -1,5 +1,4 @@
-@import '../../../mixins.scss';
-
+@import "../../../../../mixins.scss";
 
 .contents {
   width: 100%;
@@ -28,14 +27,14 @@
 }
 
 .title {
-  p{
+  p {
     font-size: 40px;
     line-height: 0.8;
     font-weight: 600;
   }
 }
 .name {
-  color:#fdb933;
+  color: #fdb933;
   font-size: 20px;
   padding: 10px 0px;
 }
@@ -49,7 +48,6 @@
   justify-content: center;
 }
 
-
 @include desktop {
   .contents {
     flex-direction: row;
@@ -62,7 +60,5 @@
     & img {
       height: 300px;
     }
-
   }
-
 }
