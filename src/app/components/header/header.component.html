@@ -1,31 +1,39 @@
 <div class="header-toolbar">
   <div class="header-logo">
     <img class="header-logo-image" src="assets/images/header-logo.png" alt="" />
-    <button mat-icon-button class="login-icon-button" (click)="login($event)">
+    <button mat-icon-button class="login-icon-button" (click)="login()">
       <mat-icon>login</mat-icon>
     </button>
   </div>
   <div class="header-navigation-buttons">
-    <!-- <button
+    <button
       mat-button
       class="navigation-button"
-      (click)="scrollToContent('introduction')"
-      [ngClass]="{ selected: selectedId === 'introduction' }"
+      (click)="navigate('/main')"
+      [ngClass]="{ selected: currentPath === '/main' }"
     >
       <p>Esittely</p>
     </button>
     <button
       mat-button
       class="navigation-button"
-      (click)="scrollToContent('samples')"
-      [ngClass]="{ selected: selectedId === 'samples' }"
+      (click)="navigate('/skills')"
+      [ngClass]="{ selected: currentPath === '/skills' }"
     >
       <p>Osaaminen</p>
-    </button> -->
+    </button>
+    <button
+      mat-button
+      class="navigation-button"
+      (click)="navigate('/project-x')"
+      [ngClass]="{ selected: currentPath === '/project-x' }"
+    >
+      <p>Projekti X</p>
+    </button>
     <button
       mat-flat-button
       class="login-button"
-      (click)="login($event)"
+      (click)="login()"
       target="_blank"
     >
       Kirjaudu
