@@ -12,7 +12,10 @@ import { MainContentComponent } from './components/pages/main-page/main-content/
 import { MainPageComponent } from './components/pages/main-page/main-page.component';
 import { ProjectXComponent } from './components/pages/project-page/project-x/project-x.component';
 import { SkillsPageComponent } from './components/pages/skills-page/skills-page.component';
-import { SkillsFlutterComponent } from './components/pages/skills-page/skill-cards/skills-flutter/skills-flutter.component'
+import { SkillsFlutterComponent } from './components/pages/skills-page/skill-cards/skills-flutter/skills-flutter.component';
+import { SkillsAngularComponent } from './components/pages/skills-page/skill-cards/skills-angular/skills-angular.component';
+import { SkillsServerlessComponent } from './components/pages/skills-page/skill-cards/skills-serverless/skills-serverless.component';
+import { SkillsMoreToComeComponent } from './components/pages/skills-page/skill-cards/skills-more-to-come/skills-more-to-come.component'
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { SkillsFlutterComponent } from './components/pages/skills-page/skill-car
     MainPageComponent,
     ProjectXComponent,
     SkillsPageComponent,
-    SkillsFlutterComponent
+    SkillsFlutterComponent,
+    SkillsAngularComponent,
+    SkillsServerlessComponent,
+    SkillsMoreToComeComponent
   ],
   imports: [
     BrowserModule,

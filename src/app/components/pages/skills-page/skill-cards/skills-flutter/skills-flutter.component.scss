@@ -9,18 +9,15 @@
   }
 }
 .samples-image {
-  height: auto;
+  width: 30%;
 }
-
-.button {
-  cursor: pointer;
-}
+@include material-card;
 
 @include desktop {
   .samples-text {
     width: 100%;
   }
   .samples-image {
-    width: 50%;
+    width: 25%;
   }
 }

@@ -15,3 +15,17 @@
     @content;
   }
 }
+
+@mixin material-card {
+  .mat-mdc-card .mat-mdc-card-content {
+    min-height: 500px !important;
+  }
+  .mat-mdc-card-title {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    // width: 100%;
+    justify-content: center;
+    min-height: 100px;
+  }
+}
