@@ -6,8 +6,9 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  width: 60%;
+  width: 77%;
   z-index: 3;
+  background-color: rgba(255, 255, 255, 0.861);
 }
 
 .header-logo {
@@ -15,7 +16,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   flex: 1;
 }
 .header-logo-image {
@@ -23,17 +23,6 @@
 }
 .login-icon-button {
   display: inline;
-}
-
-header {
-  grid-area: title;
-  font-size: 3em;
-  font-weight: 700;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: #141414;
-  align-self: self-start;
-  justify-self: center;
-  margin-top: 30px;
 }
 
 .login-button {
@@ -64,10 +53,9 @@ header {
 
 @include desktop {
   .header-toolbar {
-    display: flex;
-    background-color: #ffffffdb !important;
     justify-content: space-between;
     flex-direction: row;
+    width: 83%;
   }
   .login-button {
     width: 100px;
@@ -94,5 +82,12 @@ header {
   }
   .header-navigation-buttons {
     padding-right: 20px;
+  }
+}
+
+@include desktop-large {
+  .header-toolbar {
+    width: 60%;
+    max-width: 80%;
   }
 }
