@@ -1,0 +1,17 @@
+@import "../../../../../mixins.scss";
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 300px;
+}
+
+@include desktop {
+  .project-container {
+    flex-direction: row;
+    gap: 20px;
+    min-height: 500px;
+    padding-top: 50px;
+  }
+}

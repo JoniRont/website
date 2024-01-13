@@ -6,13 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { IntroductionComponent } from './components/pages/main-page/introduction/introduction.component';
-import { SamplesComponent } from './components/pages/skills-page/skills-page/samples/samples.component';
+import { SkillsAWSComponent } from './components/pages/skills-page/skill-cards/skills-aws/skills-aws.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainContentComponent } from './components/pages/main-page/main-content/main-content.component';
-import { MatIconModule } from '@angular/material/icon';
 import { MainPageComponent } from './components/pages/main-page/main-page.component';
 import { ProjectXComponent } from './components/pages/project-page/project-x/project-x.component';
-import { SkillsPageComponent } from './components/pages/skills-page/skills-page/skills-page.component'
+import { SkillsPageComponent } from './components/pages/skills-page/skills-page.component';
+import { SkillsFlutterComponent } from './components/pages/skills-page/skill-cards/skills-flutter/skills-flutter.component'
 
 
 @NgModule({
@@ -20,19 +20,19 @@ import { SkillsPageComponent } from './components/pages/skills-page/skills-page/
     AppComponent,
     HeaderComponent,
     IntroductionComponent,
-    SamplesComponent,
+    SkillsAWSComponent,
     FooterComponent,
     MainContentComponent,
     MainPageComponent,
     ProjectXComponent,
-    SkillsPageComponent
+    SkillsPageComponent,
+    SkillsFlutterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

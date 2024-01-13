@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SamplesComponent } from './samples.component';
+import { SkillsAWSComponent } from './skills-aws.component';
 
 describe('SamplesComponent', () => {
-  let component: SamplesComponent;
-  let fixture: ComponentFixture<SamplesComponent>;
+  let component: SkillsAWSComponent;
+  let fixture: ComponentFixture<SkillsAWSComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SamplesComponent]
+      declarations: [SkillsAWSComponent]
     });
-    fixture = TestBed.createComponent(SamplesComponent);
+    fixture = TestBed.createComponent(SkillsAWSComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
