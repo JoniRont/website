@@ -16,7 +16,6 @@
   text-overflow: clip;
   width: 100%;
   flex: 2;
-  margin-left: 20px;
   font-size: 20px;
 }
 
@@ -29,7 +28,7 @@
 .title {
   padding: 20px 0px;
   p {
-    font-size: 80px;
+    font-size: 40px;
     line-height: 0.8;
     font-weight: 600;
   }
@@ -80,6 +79,14 @@
   .introduction-image {
     img {
       max-height: 400px;
+    }
+  }
+  .title {
+    padding: 20px 0px;
+    p {
+      font-size: 80px;
+      line-height: 0.8;
+      font-weight: 600;
     }
   }
 }
