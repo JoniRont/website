@@ -8,12 +8,23 @@
         Engineer<span style="color: #fdb933; font-size: 40px">.</span>
       </p>
     </div>
-    <p>
-      Ohjelmistokehittäjät usein työskentelevät usein tiimien, esimiesten ja
-      asiakkaiden kanssa, he tarvitsevat vahvoja viestintätaitoja.
-    </p>
-    <div class="some-links">Somelinkit</div>
-    <button mat-button class="cv-button">Lataa CV</button>
+    <div class="desc">
+      Ohjelmistokehittäjän hommissa toimiminen tarkoittaa jatkuvaa yhteistyötä
+      eri tiimien, esimiesten ja asiakkaiden kanssa. Tämä korostaa
+      viestintätaidon merkitystä työssäni
+    </div>
+    <div class="links">
+      <button mat-button class="cv-button" (click)="downloadCv()">
+        Avaa CV
+      </button>
+      <a href="https://www.linkedin.com/in/jonirontynen/" target="_blank">
+        <img
+          class="linkedIn"
+          src="../../../../../assets/images/linkedIn.png"
+          alt=""
+        />
+      </a>
+    </div>
   </div>
   <div class="introduction-image">
     <img src="assets/images/me-ellipse.png" alt="" />

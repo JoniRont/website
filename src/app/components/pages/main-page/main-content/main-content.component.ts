@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-content.component.scss']
 })
 export class MainContentComponent {
-
+  downloadCv(){
+    window.open('/assets/joni_rontynen_cv.pdf', '_blank');
+  }
 }
