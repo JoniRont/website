@@ -15,7 +15,8 @@ import { SkillsPageComponent } from './components/pages/skills-page/skills-page.
 import { SkillsFlutterComponent } from './components/pages/skills-page/skill-cards/skills-flutter/skills-flutter.component';
 import { SkillsAngularComponent } from './components/pages/skills-page/skill-cards/skills-angular/skills-angular.component';
 import { SkillsServerlessComponent } from './components/pages/skills-page/skill-cards/skills-serverless/skills-serverless.component';
-import { SkillsMoreToComeComponent } from './components/pages/skills-page/skill-cards/skills-more-to-come/skills-more-to-come.component'
+import { SkillsMoreToComeComponent } from './components/pages/skills-page/skill-cards/skills-more-to-come/skills-more-to-come.component';
+import { DrawerComponent } from './components/global-components/drawer/drawer.component'
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { SkillsMoreToComeComponent } from './components/pages/skills-page/skill-
     SkillsFlutterComponent,
     SkillsAngularComponent,
     SkillsServerlessComponent,
-    SkillsMoreToComeComponent
+    SkillsMoreToComeComponent,
+    DrawerComponent
   ],
   imports: [
     BrowserModule,

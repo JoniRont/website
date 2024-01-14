@@ -2,12 +2,15 @@
   width: 100%;
   height: 100%;
 }
-
+.drawer-container {
+  background-color: transparent !important;
+}
 .main-components {
   background-color: "#FFFFFF";
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  margin: 30px;
 }
 .footer {
   position: relative;

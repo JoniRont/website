@@ -1,0 +1,27 @@
+.drawer-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.navigation-button {
+  color: rgb(0, 0, 0) !important;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.selected {
+  color: #fdb933 !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.close-icon-button {
+  padding: 4px;
+  margin-bottom: 20px;
+}
+.login-button {
+  background-color: #fdb933 !important;
+  width: 100px;
+  padding: 4px 8px;
+}

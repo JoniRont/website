@@ -1,14 +1,17 @@
-<!-- <mat-toolbar color="primary" class="fixed-header" ></mat-toolbar> -->
-<!-- <div class="custom-popup" id="frugalmap" >Map</div> -->
 <div class="main">
-  <div class="background-image"></div>
-  <div class="main-components">
-    <app-header
-      (scrollToContentEmitter)="scrollToIntroduction($event)"
-    ></app-header>
-    <div style="width: 100%; height: 100%; padding-top: 50px">
-      <router-outlet></router-outlet>
+  <mat-drawer-container class="drawer-container">
+    <mat-drawer #drawer mode="over" [opened]="drawerState" position="end">
+      <app-drawer> </app-drawer>
+    </mat-drawer>
+
+    <div class="background-image"></div>
+    <div class="main-components">
+      <div class="example-sidenav-content"></div>
+      <app-header></app-header>
+      <div style="width: 100%; height: 100%; padding-top: 50px">
+        <router-outlet></router-outlet>
+      </div>
     </div>
     <app-footer class="footer"></app-footer>
-  </div>
+  </mat-drawer-container>
 </div>
