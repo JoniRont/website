@@ -1,9 +1,14 @@
 .drawer-container {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 30%;
+  background-color: white;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 .navigation-button {
   color: rgb(0, 0, 0) !important;
