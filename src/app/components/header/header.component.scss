@@ -1,5 +1,11 @@
 @import "../../../mixins.scss";
-
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
 .header-toolbar {
   display: flex;
   justify-content: space-between;
@@ -11,7 +17,6 @@
   z-index: 3;
   background-color: rgba(255, 255, 255, 0.861);
 }
-
 .header-logo {
   display: flex;
   flex-direction: row;
@@ -61,7 +66,7 @@
   .header-toolbar {
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    max-width: 1920px;
   }
   .login-button {
     width: 100px;

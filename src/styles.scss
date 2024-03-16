@@ -12,10 +12,17 @@ body {
   background-image: url("assets/images/background-image.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100%;
   background-position: center;
   min-height: 100%;
   width: 100%;
 }
+
+.mat-typography {
+  width: 100%;
+  min-height: 100%;
+}
+
 @include desktop {
   body {
     width: 90%;
