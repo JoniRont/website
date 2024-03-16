@@ -16,7 +16,8 @@ import { SkillsFlutterComponent } from './components/pages/skills-page/skill-car
 import { SkillsAngularComponent } from './components/pages/skills-page/skill-cards/skills-angular/skills-angular.component';
 import { SkillsServerlessComponent } from './components/pages/skills-page/skill-cards/skills-serverless/skills-serverless.component';
 import { SkillsMoreToComeComponent } from './components/pages/skills-page/skill-cards/skills-more-to-come/skills-more-to-come.component';
-import { DrawerComponent } from './components/global-components/drawer/drawer.component'
+import { DrawerComponent } from './components/global-components/drawer/drawer.component';
+import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component'
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { DrawerComponent } from './components/global-components/drawer/drawer.co
     SkillsAngularComponent,
     SkillsServerlessComponent,
     SkillsMoreToComeComponent,
-    DrawerComponent
+    DrawerComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

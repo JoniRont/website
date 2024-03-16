@@ -1,3 +1,4 @@
+import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './components/pages/main-page/main-page.component';
@@ -7,27 +8,31 @@ import { SkillsPageComponent } from './components/pages/skills-page/skills-page.
 const routes: Routes = [
   {
     path: 'project-x',
-    component: ProjectXComponent
+    component: ProjectXComponent,
   },
   {
     path: 'skills',
-    component: SkillsPageComponent
+    component: SkillsPageComponent,
   },
   {
     path: 'main',
-    component: MainPageComponent
+    component: MainPageComponent,
   },
   {
-    path: '',   redirectTo: '/main', pathMatch: 'full'
-  }
+    path: 'privacy-policy',
+    component: PrivacyPolicyComponent,
+  },
+  {
+    path: '',
+    redirectTo: '/main',
+    pathMatch: 'full',
+  },
 
   // { path: '**', component: PageNotFoundComponent },
-
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

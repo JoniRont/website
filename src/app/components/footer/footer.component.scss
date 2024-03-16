@@ -1,20 +1,9 @@
 .footer-container {
   display: flex;
   justify-content: center;
-  justify-items: center;
   height: 50px;
   background-color: #fdb933;
-  align-content: center;
-  align-items: flex-end;
-  justify-items: flex-end;
+  align-items: center;
   margin-top: 50px;
+  gap: 100px;
 }
-
-p {
-  color: #000000;
-}
-
-// .divider {
-//   border-top-color: #fdba3339;
-//   border-top-width: 5px;
-// }
