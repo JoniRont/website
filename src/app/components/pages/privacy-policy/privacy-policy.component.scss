@@ -1,5 +1,8 @@
 .privacy-policy {
   display: flex;
   flex-direction: column;
-  padding: 0px 200px 0px 200px;
+  h3 {
+    font-weight: 500;
+    margin: 0px;
+  }
 }
