@@ -17,8 +17,8 @@ import { SkillsAngularComponent } from './components/pages/skills-page/skill-car
 import { SkillsServerlessComponent } from './components/pages/skills-page/skill-cards/skills-serverless/skills-serverless.component';
 import { SkillsMoreToComeComponent } from './components/pages/skills-page/skill-cards/skills-more-to-come/skills-more-to-come.component';
 import { DrawerComponent } from './components/global-components/drawer/drawer.component';
-import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component'
-
+import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
+import { ProjectMobileAppComponent } from './components/pages/project-page/project-x/project-mobile-app/project-mobile-app.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privac
     SkillsServerlessComponent,
     SkillsMoreToComeComponent,
     DrawerComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    ProjectMobileAppComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +46,6 @@ import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privac
     MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
